@@ -2,7 +2,7 @@ Summary:	Emacs support for LaTeX cross-references, citations
 Summary(pl):	Wsparcie dla LaTeX-owych referencji i cytatów
 Name:		xemacs-reftex-pkg
 %define		srcname	reftex
-Version:	1.25
+Version:	1.26
 Release:	1
 License:	GPL
 Group:		Applications/Editors/Emacs
@@ -31,11 +31,10 @@ Wsparcie dla LaTeX-owych referencji i cytatów.
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT{%{_datadir}/xemacs-packages,%{_infodir}}
+install -d $RPM_BUILD_ROOT{%{_datadir}/xemacs-packages/lisp,%{_infodir}}
 
-cp -a * $RPM_BUILD_ROOT%{_datadir}/xemacs-packages
-mv -f $RPM_BUILD_ROOT%{_datadir}/xemacs-packages/info/*.info* $RPM_BUILD_ROOT%{_infodir}
-rm -fr $RPM_BUILD_ROOT%{_datadir}/xemacs-packages/info
+cp -a lisp/* $RPM_BUILD_ROOT%{_datadir}/xemacs-packages/lisp
+install info/*.info* $RPM_BUILD_ROOT%{_infodir}
 
 # remove .el file if corresponding .elc file exists
 find $RPM_BUILD_ROOT -type f -name "*.el" | while read i; do test ! -f ${i}c || rm -f $i; done
@@ -51,8 +50,7 @@ rm -fr $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc lisp/reftex/ChangeLog
-%{_datadir}/xemacs-packages%{_sysconfdir}/*
-%{_infodir}/*
+%doc lisp/reftex/ChangeLog etc/*
 %dir %{_datadir}/xemacs-packages/lisp/*
 %{_datadir}/xemacs-packages/lisp/*/*.el*
+%{_infodir}/*
