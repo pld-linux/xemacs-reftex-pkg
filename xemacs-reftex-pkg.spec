@@ -2,7 +2,7 @@ Summary:	Emacs support for LaTeX cross-references, citations
 Summary(pl):	Emacs support for LaTeX cross-references, citations
 Name:		xemacs-reftex-pkg
 %define 	srcname	reftex
-Version:	1.16
+Version:	1.21
 Release:	1
 License:	GPL
 Group:		Applications/Editors/Emacs
