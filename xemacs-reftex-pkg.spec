@@ -1,14 +1,15 @@
 Summary:	Emacs support for LaTeX cross-references, citations
-Summary(pl):	Emacs support for LaTeX cross-references, citations
+Summary(pl):	Wsparcie dla LaTeX-owych referencji i cytatów
 Name:		xemacs-reftex-pkg
 %define 	srcname	reftex
 Version:	1.22
 Release:	1
 License:	GPL
 Group:		Applications/Editors/Emacs
+Group(de):	Applikationen/Editors/Emacs
 Group(pl):	Aplikacje/Edytory/Emacs
 Source0:	ftp://ftp.xemacs.org/xemacs/packages/%{srcname}-%{version}-pkg.tar.gz
-Patch0:		xemacs-reftex-pkg-info.patch
+Patch0:		%{name}-info.patch
 URL:		http://www.xemacs.org/
 BuildArch:	noarch
 Conflicts:	xemacs-sumo
@@ -36,8 +37,7 @@ cp -a * $RPM_BUILD_ROOT%{_datadir}/xemacs-packages
 mv -f  $RPM_BUILD_ROOT%{_datadir}/xemacs-packages/info/*.info* $RPM_BUILD_ROOT%{_infodir}
 rm -fr $RPM_BUILD_ROOT%{_datadir}/xemacs-packages/info
 
-gzip -9nf $RPM_BUILD_ROOT%{_infodir}/*.info* \
-	lisp/reftex/ChangeLog 
+gzip -9nf lisp/reftex/ChangeLog 
 
 %clean
 rm -fr $RPM_BUILD_ROOT
