@@ -1,24 +1,22 @@
-diff -Nur xemacs-reftex-pkg-1.16/man/reftex/reftex.texi xemacs-reftex-pkg-1.16.new/man/reftex/reftex.texi
---- xemacs-reftex-pkg-1.16/man/reftex/reftex.texi	Fri Jan  7 15:15:21 2000
-+++ xemacs-reftex-pkg-1.16.new/man/reftex/reftex.texi	Sun Mar 26 15:09:09 2000
-@@ -1,11 +1,17 @@
+--- xemacs-reftex-pkg-1.25/man/reftex/reftex.texi~	Thu Mar 21 01:01:06 2002
++++ xemacs-reftex-pkg-1.25/man/reftex/reftex.texi	Sat Jul  6 19:57:11 2002
+@@ -1,11 +1,16 @@
  \input texinfo  @c -*-texinfo-*-
  @c %**start of header
 -@setfilename reftex
 +@setfilename ../../info/reftex.info
  @settitle RefTeX User Manual
--@dircategory Editors
-+
+-@dircategory Emacs
 +@ifinfo
 +@format
 +@dircategory XEmacs Editor:
  @direntry
 -* RefTeX: (reftex).	Emacs support for LaTeX cross-references and citations.
-+* RefTeX: (reftex).                     Emacs support for LaTeX cross-references and citations.
++* RefTeX: (reftex).			Emacs support for LaTeX
++					cross-references and citations
  @end direntry
 +@end format
 +@end ifinfo
-+
  @synindex ky cp
  @syncodeindex vr cp
  @syncodeindex fn cp
