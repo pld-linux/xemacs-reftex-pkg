@@ -3,7 +3,7 @@ Summary(pl):	Wsparcie dla LaTeXowych referencji i cytatów
 Name:		xemacs-reftex-pkg
 %define		srcname	reftex
 Version:	1.33
-Release:	1
+Release:	2
 License:	GPL
 Group:		Applications/Editors/Emacs
 Source0:	ftp://ftp.xemacs.org/xemacs/packages/%{srcname}-%{version}-pkg.tar.gz
