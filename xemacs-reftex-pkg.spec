@@ -2,12 +2,12 @@ Summary:	Emacs support for LaTeX cross-references, citations
 Summary(pl):	Wsparcie dla LaTeXowych referencji i cytatów
 Name:		xemacs-reftex-pkg
 %define		srcname	reftex
-Version:	1.26
+Version:	1.33
 Release:	1
 License:	GPL
 Group:		Applications/Editors/Emacs
 Source0:	ftp://ftp.xemacs.org/xemacs/packages/%{srcname}-%{version}-pkg.tar.gz
-# Source0-md5:	309b2d4e626b4158bd0bcbfc75e4cb78
+# Source0-md5:	4d9a603199ad55c5d3f3cd31413a56de
 Patch0:		%{name}-info.patch
 URL:		http://www.xemacs.org/
 BuildArch:	noarch
