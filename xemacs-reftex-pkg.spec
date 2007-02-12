@@ -1,5 +1,5 @@
 Summary:	Emacs support for LaTeX cross-references, citations
-Summary(pl):	Wsparcie dla LaTeXowych referencji i cytatów
+Summary(pl.UTF-8):   Wsparcie dla LaTeXowych referencji i cytatÃ³w
 Name:		xemacs-reftex-pkg
 %define		srcname	reftex
 Version:	1.34
@@ -21,8 +21,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 Emacs support for LaTeX cross-references, citations.
 
-%description -l pl
-Wsparcie dla LaTeXowych referencji i cytatów.
+%description -l pl.UTF-8
+Wsparcie dla LaTeXowych referencji i cytatÃ³w.
 
 %prep
 %setup -q -c
