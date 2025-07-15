@@ -26,7 +26,7 @@ Wsparcie dla LaTeXowych referencji i cytatów.
 
 %prep
 %setup -q -c
-%patch0 -p1
+%patch -P0 -p1
 
 %build
 cd man/reftex
